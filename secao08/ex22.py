@@ -7,12 +7,9 @@ saída n linhas com pontos de exclamação, conforme o exemplo abaixo (para n = 
     !!!!
     !!!!!
 """
-def pontos(num):
-  print()
-  if (num > 0) and (num // 1 == num):
-    for i in range(1 , num+1):
-      print("!" * i)
-  else:
-    print("Número inválido")
-num = int(input("Digite um número: "))
-pontos(num)
+def exclamacao(linhas):
+    for i in range(1, linhas+1):
+        print('!'*i)
+    return
+
+exclamacao(5)
